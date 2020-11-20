@@ -1,0 +1,13 @@
+<header class="header">
+  <div class="header--caption">Crib-project </div>
+  <div class="header--signin_field" *ngIf="user$ | async as user; else login">
+    <div class="user">
+      <div class="user--name">{{ user.displayName }}</div>
+      <img class="user--photo" [src]="user.photoURL">
+      <button class="logout-btn btn btn-primary btn-sm" (click)="signOut()">Logout</button>
+    </div>
+  </div>
+  <ng-template #login>
+    <button class="login-btn btn btn-primary btn-sm" (click)="signIn()">Login with Google</button>
+  </ng-template>
+</header>

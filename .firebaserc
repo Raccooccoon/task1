@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "project-1-aab39": {
+      "hosting": {
+        "first-task": [
+          "project-1-aab39"
+        ]
+      }
+    }
+  }
+}
